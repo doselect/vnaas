@@ -4,10 +4,10 @@
 
 html, body {
   height: 100%;
-  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
+  color: rgb(147, 161, 161);
 }
 
 body {
@@ -15,11 +15,89 @@ body {
   font-size: 1.1rem;
   line-height: 1.4;
   min-height: 100%;
+  background: rgb(0, 43, 54);
 }
 
+a {
+  color: rgb(238, 232, 213);
+  text-decoration: none;
+}
+a:hover, a:active{
+  color: #fff;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 26px;
+}
 
 .hero {
-  background: #000;
-  height: 100%;
-  width: 100%;
+  padding: 64px 0;
+}
+
+.hero h1 {
+  font-weight: 700;
+  color: rgb(220, 50, 47);
+  font-size: 3.3em;
+  line-height: 1;
+  margin: 32px 0 6px;
+}
+
+.hero h2 {
+  margin: 0;
+}
+
+p {
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+p.caret:before {
+  content: '>';
+  position: absolute;
+  left: -16px;
+  top: -2px;
+  color: rgb(88, 110, 117);
+}
+
+h3 {
+  text-transform: lowercase;
+  color: rgb(238, 232, 213);
+  font-size: 1.8em;
+  margin: 32px 0 6px;
+}
+
+.testimonial {
+  padding: 16px 0;
+  position: relative;
+}
+
+.testimonial img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 22px;
+}
+
+.testimonial .text {
+  margin-left: 80px;
+}
+
+.testimonial p {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 1.1em;
+}
+
+.testimonial p:before, .testimonial p:after {
+  content: '"';
+}
+
+.testimonial h4 {
+  margin: 6px 0;
 }
