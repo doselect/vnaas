@@ -30,10 +30,11 @@ a:hover, a:active{
   margin: 0 auto;
   max-width: 1024px;
   padding: 0 26px;
+  margin-bottom: 64px;
 }
 
 .hero {
-  padding: 64px 0;
+  padding: 64px 0 16px;
 }
 
 .hero h1 {
@@ -68,7 +69,7 @@ h3 {
   text-transform: lowercase;
   color: rgb(238, 232, 213);
   font-size: 1.8em;
-  margin: 32px 0 6px;
+  margin: 48px 0 6px;
 }
 
 .testimonial {
@@ -100,4 +101,88 @@ h3 {
 
 .testimonial h4 {
   margin: 6px 0;
+  color: rgb(42, 161, 152);
+}
+
+#var {
+  color: rgb(108, 113, 196);
+  font-weight: 700;
+  font-size: 2em;
+  border: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.box {
+  padding: 10px 16px;
+  position: relative;
+  background: rgb(7, 54, 66);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.message {
+  margin: 6px 0 10px;
+  padding-left: 2px;
+  visibility: hidden;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.getter {
+  margin-bottom: 48px;
+}
+
+#generateButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 16px;
+  border: 0;
+  color: #fff;
+  background: rgb(108, 113, 196);
+  font-weight: 700;
+  font-size: 1.2em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#language {
+  background: transparent;
+  color: rgb(42, 161, 152);
+  border: 0;
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.languageContainer:before {
+  content: 'Select language: ';
+  font-weight: 700;
+  margin-right: 16px;
+  color: rgb(101, 123, 121);
+}
+
+.integration.testimonial img {
+  border-radius: 0;
+  top: 14px;
+}
+
+.integration.testimonial p:before, .integration.testimonial p:after {
+  content: '';
+}
+
+.divider {
+  width: 100%;
+  border-top: dashed 1px;
+  margin-top: 48px;
+}
+
+.love {
+  margin-top: 32px;
+}
+
+.heart {
+  color: rgb(220, 50, 47);
 }

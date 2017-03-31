@@ -6,9 +6,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>VNaaS by DoSelect -- Improving developer productivity since 1491004799.</title>
-    <meta name="description" content="VNaaS by DoSelect -- Improving developer productivity since 1491004799.">
+    <title>VNaaS - Variable Name as a Service by DoSelect -- Improving developer productivity since 1491004799.</title>
+    <meta name="description" content="VNaaS by DoSelect - Variable Name as a Service by DoSelect -- Improving developer productivity since 1491004799.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://d24cdstip7q8pz.cloudfront.net/t/t20160926172513/content/common/images/variable%20name%20as%20a%20service..png" />
+    <meta property="og:description" content="Some very reliable studies suggest that the mean time wasted by a developer on choosing a variable name is 4.2 hours every day. This is a collosal waste of their time, when they could be working on solving a problem as grave as non-existence of ephemeral picture-sharing capability on a social network. We couldn't let this happen, of course. Hence, VNaaS." />
+    <meta property="og:url" content="https://www.vnaas.doselect.com" />
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.min.css">
     <link rel="stylesheet" href="styles/app.css">
@@ -20,44 +23,98 @@
 
     <div class="wrapper">
       <section class="hero">
-        <h1>variable name as a service</h1>
+        <h1>variable name as a service.</h1>
         <h2>brought to you by <a href="https://doselect.com" target="_blank">DoSelect</a>.</h2>
       </section>
-      <section id="case_select" class="getter">
-        <select>
-          <option value="rust">Rust</option>
-          <option value="csharp">C#</option>
-          <option value="go">Go</option>
-          <option value="java">Java</option>
-          <option value="javascript">JavaScript</option>
-          <option value="swift">Swift</option>
-          <option value="dotnet">.NET</option>
-          <option value="fsharp">F#</option>
-          <option value="python">Python</option>
-          <option value="ruby">Ruby</option>
-          <option value="elixir">Elixir</option>
-          <option value="eiffel">Eiffel</option>
-          <option value="c">C</option>
-          <option value="perl">Perl</option>
-          <option value="lisp">Lisp</option>
-        </select>
+      <div class="getter">
+        <div class="message" id="msg">Example...</div>
+        <div class="box">
+          <input type="text" name="var" id="var" readonly="true"
+            onClick="this.setSelectionRange(0, this.value.length)">
+          <button id="generateButton">Generate</button>
+        </div>
+        <div class="languageContainer">
+          <select id="language">
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+            <option value="go">Go</option>
+            <option value="c">C</option>
+            <option value="csharp">C#</option>
+            <option value="rust">Rust</option>
+            <option value="swift">Swift</option>
+            <option value="dotnet">.NET</option>
+            <option value="fsharp">F#</option>
+            <option value="ruby">Ruby</option>
+            <option value="elixir">Elixir</option>
+            <option value="eiffel">Eiffel</option>
+            <option value="perl">Perl</option>
+            <option value="lisp">Lisp</option>
+          </select>
+        </div>
+      </div>
 
-        <span id="case_display"></span>
-
-      </section>
       <p class="caret">Some very reliable studies suggest that the mean time wasted by a developer on choosing a variable name is
         4.2 hours every day. This is a collosal waste of their time, when they could be working on solving a problem
-        as grave as non-existence of ephemeral picture-sharing capanility on a social network. We couldn't let this
+        as grave as non-existence of ephemeral picture-sharing capability on a social network. We couldn't let this
         happen, of course. Hence, VNaaS.</p>
 
-      <h3>See what others are saying</h3>
+      <h3>See what others devs are saying...</h3>
       <div class="testimonial">
-        <img src="http://placeholdit.imgix.net/~text?txtsize=33&w=60&h=60" alt="">
+        <img src="images/stormtrooper.png" alt="Briam Kernighan">
         <div class="text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis quae voluptate nulla dolore veniam reiciendis.</p>
+          <p>I love this. I used to spend too much time deciding variable names. Now I feel so much more
+          productive!</p>
           <h4>Briam Kernighan</h4>
         </div>
       </div>
+      <div class="testimonial">
+        <img src="images/mario.png" alt="Jeff Deam">
+        <div class="text">
+          <p>THIS IS IT! I cannot believe, this is a major breakthrough. Think about all the time we'll save!</p>
+          <h4>Jeff Deam</h4>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="images/batman.png" alt="Neo">
+        <div class="text">
+          <p>This is what helped me write that auto-pilot patch at the end of that movie. True story.</p>
+          <h4>Batman</h4>
+        </div>
+      </div>
+
+      <h3>Premium Features</h3>
+      <p class="caret">To unlock the premium features of this service, you need to come down to our office and
+      show us how to invert a binary tree on a whiteboard. There is no cost -- it's all free since it's
+      a serverless service (yes). But yeah, you need to show us how to invert that tree. You're not a
+      dev worthy enough of your IDE if you cannot do that.</p>
+
+      <h3>Integrations</h3>
+      <div class="testimonial integration">
+        <img src="images/test.svg" alt="IDE">
+        <div class="text">
+          <p>VNaaS integrates with your favorite IDEs and brings auto variable naming goodness to your workflow.
+          Just press Ctrl + F13, and you shall have a variable name that rocks. The IDE plugins auto-detect the
+          current language, and give you a variable name with correct case -- see, we solved one more problem!</p>
+        </div>
+      </div>
+      <div class="testimonial integration">
+        <img src="images/settings.svg" alt="Modules">
+        <div class="text">
+          <p>Of course, you want it as a module, don't you? We're working on shipping an npm module super soon,
+          so you'd be just able to import VNaaS, and get done with it.</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <h3>btw, are you hiring devs?</h3>
+      <p>Cuz if you are, you might wanna try DoSelect for assessing candidates objectively in a better way.
+      Tests on DoSelect tell you how good a developer is on different skills, if they write good, clean code
+      so your existing devs are happy, and what kind of stuff they've done <em>apart</em> from that particular
+      test that's relevant to you -- all at one place!
+      <a href="https://doselect.com/coding-tests-recruitment" target="_blank">Check this link out.</a>
+      Or give us a shout out on <a href="https://twitter.com/DoSelectHQ">twitter</a> if you'd like!</p>
+
+      <p class="love">made with <span class="heart">♥</span> by nerds of DoSelect in Bangalore</p>
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
