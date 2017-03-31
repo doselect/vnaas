@@ -4,26 +4,26 @@ function()
   $('#value').change(function() {
 
   //get category value
-  name = $("#value option:selected").text();
+  var name = $("#value option:selected").text();
 
   if ( name === "Rust" || name === "C#" || name === "Go" || name === "Java" || name === "Javascript" || name === "Swift" || name === ".NET" ) {
-    "camel"
+    var result = $.get("foo.com","camel")
   }
 
-  if ( name === "F#" || ) {
-    "pascal"
+  if ( name === "F#" ) {
+    var result = $.get("foo.com","pascal")
   }
 
   if ( name === "Python" || name === "Ruby" || name === "Rust" || name === "Elixir" || name === "Eiffel" || name === "C" || name === "Perl" || ) {
-    "snake"
+    var result = $.get("foo.com","snake")
   }
 
-  if ( name === "Lisp" || ) {
-    "kebab"
+  if ( name === "Lisp" ) {
+    var result = $.get("foo.com","kebab")
   }
 
   else {
-
+    var result = $.get("foo.com","camel")
   }
 
   });
